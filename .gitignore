@@ -1,0 +1,5 @@
+node_modules
+*.csv
+/**/crime_json_all_years.json
+/**/2016Tickets.json
+public/views/bin

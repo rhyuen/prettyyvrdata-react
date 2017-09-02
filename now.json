@@ -1,0 +1,14 @@
+{
+    "name": "prettyyvrdata",
+    "alias": [
+        "prettyyvrdata"
+    ],
+    "env": {
+        
+    },
+    "engines": {
+        "node": "^8.2"
+    },
+    "publie": true,
+    "type": "npm"
+}
