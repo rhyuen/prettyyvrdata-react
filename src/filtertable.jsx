@@ -19,6 +19,8 @@ class FilterTable extends Component{
             <div style = {style}>
                 <span>
                     <select name = "data">                        
+                        <option value="2014staff">2012 Staff</option>
+                        <option value="2014staff">2013 Staff</option>
                         <option value="2014staff">2014 Staff</option>
                         <option value="2015staff">2015 Staff</option>
                         <option value="2016staff">2016 Staff</option>

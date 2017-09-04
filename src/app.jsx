@@ -12,8 +12,7 @@ class App extends Component{
             data: [],
             filteredData: []
         };
-        this.computeSummaryData = this.computeSummaryData.bind(this);        
-        this.descendingRemunerationSort = this.descendingRemunerationSort.bind(this);
+        this.computeSummaryData = this.computeSummaryData.bind(this);                
         this.filterByDepartment = this.filterByDepartment.bind(this);
     }
 
@@ -31,7 +30,7 @@ class App extends Component{
                         ({
                             Name: item.Name,
                             Title: item.Title,
-                            Department: item.Department,
+                            Department: item.Department.replace(/Services/, ""),
                             Remuneration: parseFloat(item.Remuneration.replace(/,/, "")),
                             Expenses: parseFloat(item.Expenses.replace(/,/, ""))
                         })
@@ -69,9 +68,7 @@ class App extends Component{
         });
     }
 
-    descendingRemunerationSort(){
-        
-    }
+   
 
     render(){
         const style = {
@@ -80,7 +77,7 @@ class App extends Component{
             flexDirection: "column",
             alignContent: "center",
             background: "orange",
-            maxWidth: "730px"            
+            width: "730px"            
         };
 
         return (

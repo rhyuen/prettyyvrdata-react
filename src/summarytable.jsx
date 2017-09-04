@@ -2,8 +2,9 @@ import React, {Component} from "react";
 
 const style = {
     display: "flex",
-    justifyContent: "center",
-    backgroundColor: "pink"
+    justifyContent: "left",
+    backgroundColor: "white",
+    width: "100%"    
 };
 
 const SummaryTable = (props) => (      
@@ -17,8 +18,8 @@ const SummaryTable = (props) => (
                     <td>Total Remuneration</td>                    
                 </th>
                 <tr>
-                    <td>{Object.keys(props.departments).length}</td>
-                    <td></td>
+                    <td>{Object.keys(props.departments).length - 1}</td>
+                    <td>{Object.values(props.departments)}</td>
                     <td></td>
                     <td></td>
                 </tr>  
